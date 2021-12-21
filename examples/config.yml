@@ -1,0 +1,12 @@
+---
+file:
+  spreadsheetId: 1q_2jUt9lt7P8O-fMyBcfYmDQkA1GvpWTBylyL_uKLS4
+  credentialFile: creds/credentials.json
+  tabs:
+    - name: participant
+      index: participant_centric
+elasticsearch:
+  host: localhost
+  scheme: http
+  port: 9200
+
