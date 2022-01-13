@@ -5,6 +5,10 @@ file:
   tabs:
     - name: participant
       index: participant_centric
+    - name: biospecimen
+      index: biospecimen_centric
+    - name: files
+      index: file_centric
 elasticsearch:
   host: localhost
   scheme: http
