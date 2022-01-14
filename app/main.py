@@ -20,7 +20,7 @@ def main(files, delete_indices):
             for row in rows:
                 definition = {header: row[idx] if len(row) >= idx + 1 else None for idx, header in enumerate(headers)}
                 doc = parse_row(definition)
-                es.index(index=index, document=doc)
+                es.index(index=index, body=doc)
 
 
 if __name__ == '__main__':
