@@ -14,7 +14,7 @@ def main(files, delete_indices):
         for tab in conf['file']['tabs']:
             index = tab['index']
             if delete_indices:
-                es.indices.delete(index=index)
+                es.indices.delete(index=index, ignore_unavailable=True)
             rows = load(conf['file']['spreadsheetId'], conf['file']['credentialFile'], tab['name'], tab.get('range'))
             headers = rows.pop(0)
             for row in rows:
